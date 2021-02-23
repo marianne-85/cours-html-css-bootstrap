@@ -1,0 +1,250 @@
+/* DOCUMENT INFORMATION
+    -Document :thé thème
+    -Version : 1.0.0
+    -Author: Moi
+    
+    
+*/
+
+/* COLORS
+    -Defaut body text #eee 
+    -h1             rgb(128, 0, 122)
+    -h2             rgba(13, 13, 14, 0.6)
+    -h3
+    -h4
+    
+    -button
+    -button:hoover
+    -icon:          rgb(128, 0, 79)
+    -border
+    
+    */
+
+/*FONTS
+        -Default Lato
+        -Subtitle
+        
+    */
+
+/* CSS DIRECTORY
+        -1.=GLOBAL
+        -2.=HEADER
+        -3.=PRODUITS
+    */
+
+
+
+
+
+/*GLOBAL
+=================================================== */
+
+
+html {
+    background-color: #fff;
+
+}
+
+h1,
+h2,
+h3,h4 {
+    font-family: 'Lato', 'Arial', sans serif;
+    color: rgb(128, 0, 122);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    word-spacing: 8px;
+
+
+}
+
+h1 {
+    color: #eeee
+}
+
+h2 {
+    color: #000;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: rgb(128, 0, 122);
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+h3 {
+
+    font-size: 160%;
+}
+
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+
+
+
+/* HEADER
+============================================*/
+
+header {
+    background-image: linear-gradient(rgba(0, 242, 96, 0.1),
+            rgba(7, 117, 230, 0.6)),
+        url(../images/header-3.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.home-title {
+    position: absolute;
+    top: 20%;
+    left: 25%
+}
+
+.home-title h1 {
+    font-size: 340%;
+    color: rgb(128, 0, 79);
+}
+
+.home-title h1 span {
+    font-weight: 700;
+    color: rgb(128, 0, 79);
+
+
+}
+
+.home-title p {
+    color: rgba(13, 13, 14, 0.6);
+    font-weight: 500;
+}
+
+/*button*/
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-colors 1s, color 1s, border 1s;
+
+}
+
+.btn-full {
+    background-color: azure;
+    color: rgba(18, 43, 184, 0.952);
+    margin-right: 15px;
+}
+
+.btn-ghost {
+    border: 1px solid #fff;
+    color: rgb(240, 235, 235);
+    color: white;
+}
+
+.btn-full:hover {
+    background-color: rgb(128, 0, 79);
+    color: #fff;
+}
+
+.btn-ghost:hover {
+    background-color: rgb(128, 0, 79);
+    border: 1px solid rgb(128, 0, 79);
+    color: #fff;
+}
+
+/* PRODUITS
+============================================*/
+.produits-plus {
+    margin: 20px 0;
+}
+
+.produits-plus:hover .produit-icon {
+    transform: translateX(20px);
+    color: rgba(167, 115, 160, 0.933);
+}
+
+.produits-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produit-icon {
+    font-size: 34px;
+    color: rgb(128, 0, 79);
+    transition: all 1s;
+}
+
+/* FAMILLES THES
+============================================*/
+
+.famille-the {
+    background-color: rgb(146, 10, 94);
+
+}
+
+.famille-details {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(56, 27, 27, 0.5);
+}
+
+.famille-details img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+.famille-details h4 {
+    text-align: center;
+}
+/* GALERIES PHOTOS
+============================================*/
+
+.galeries-img{
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat:no-repeat ;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.galeries-titres{
+    position: relative;
+    top: 260px;
+    left: 20px;
+}
+    
+    .galeries-titres h4{
+    color: #fff;
+    }
+
+
+
+
+
+
+
