@@ -207,6 +207,7 @@ header {
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(56, 27, 27, 0.5);
+    margin-bottom: 20px;
 }
 
 .famille-details img {
@@ -242,9 +243,150 @@ header {
     color: #fff;
     }
 
+/* CLIENTS
+============================================*/
 
+.clients{
 
+    background-image: linear-gradient(rgba(0, 242, 96, 0.1),
+    rgba(7, 117, 230, 0.6)),
+    url(../images/clients/Avis\ clients/the-paysage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+.clients h2{
+    color:rgb(46, 42, 46);
 
+    
+}
+.clients h2::after{
+    color: rgb(146, 10, 94);
+}
+blockquote{
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+    color: rgb(128, 0, 79);
+    
+}
+blockquote::before{
+    content: "\201C ";
+    font-size: 800%;
+    font-family: "sanchez",serif;
+    position: absolute;
+    top: px;
+    left: px;
+    color:rgb(128, 0, 79,0.7);
+    
+}
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+    
 
+}
 
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* PACKS
+============================================*/
+.pack{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.pack h3{
+    color:rgb(166, 25, 194);
+    font-weight: 400;
+
+}
+.pack h4{
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 2px;
+}
+
+.pack-premium{
+    background-color: rgb(199 84 199);
+    color: #fff;
+}
+.pack-title-premium{
+    position: relative;
+    bottom: 130px;
+    left: 40%; 
+    background-color: #fff;
+    color: purple;
+    border-radius: 10px; 
+    font-size: 90%;
+}
+
+.pack-title{
+    padding: 10px 10px  0 10px;
+    border-bottom: 2px solid #d7c8c8;
+}
+
+.pack-content ul{
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack-content ul li i{
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup{
+    text-align: center;
+}
+
+.btn-pack{
+    background-color: purple;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+/* CONTACTS
+============================================*/
+
+.contact-form{
+    margin-bottom: 20px;
+
+}
+
+.contact-message{
+width: 100%;    
+}
+.btn-contact{
+    background-color: rgb(83, 82, 143);
+    color: rgba(211, 214, 236, 0.952);
+    
+}
+footer{
+    background-color: black;
+    color: #fff;
+    height: 60px;
+    padding: 20px 20px;
+}
+.copyright{
+    text-align: center;
+    
+}
+.copyright a{
+    color: rgb(241, 233, 233);
+}

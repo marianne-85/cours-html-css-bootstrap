@@ -14,6 +14,8 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@1&display=swap" rel="stylesheet">     
     <!--style-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
@@ -23,19 +25,51 @@
     <link rel="stylesheet" href="ressources/css/style.css">
     <title>Introduction · Bootstrap v5.0</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-699CL1678M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-699CL1678M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-699CL1678M');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-699CL1678M');
+    </script>
 </head>
 
 
 <body>
     <header>
+
+        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">Boutique de Thé</a>
+                
+                <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#monMenu"
+                        aria-controls="monMenu"
+                        aria-label="Menu pour mobile"
+                >
+                <span class="navbar-toggler-icon"></span>
+
+                </button>
+                
+                    <div class="collapse navbar-collapse" id="monMenu">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link" href="/">Qui sommes-nous</a>
+                            <a class="nav-item nav-link" href="#nosproduits">Nos produits</a>
+                            <a class="nav-item nav-link" href="#nosphotos">Photos</a>
+                            <a class="nav-item nav-link" href="#nospacks">Nos packs</a>
+                            <a class="nav-item nav-link" href="#contact">Contact</a>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+
+
         <div class="container">
             <div class="row">
                 <div class="col-md-12 home-title">
@@ -116,7 +150,7 @@
     </section>
     <!--FAMILLES DES THES
 =========================================== -->
-    <section class="famille-the">
+    <section class="famille-the" id="nosproduits">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -156,7 +190,7 @@
     </section>
     <!--GALERIES PHOTOS
 =========================================== -->
-    <section>
+    <section id="nosphotos">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -208,18 +242,250 @@
     </section>
     <!--AVIS CLIENTS
 =========================================== -->
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Ils ont adoré</h2>
+    <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Ils ont adoré</h2>
+
+                </div>
 
             </div>
 
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="client-profil">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa.
+                        <cite><img src="ressources/images/clients/Avis clients/emilie.jpg" alt="">Emilie du
+                            Châtelet</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="client-profil">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa.
+                        <cite><img src="ressources/images/clients/Avis clients/blaise.jpg" alt="">Blaise
+                            Pascal</cite>
 
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="client-profil">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                        dolor. Aenean massa.
+                        <cite><img src="ressources/images/clients/Avis clients/julia.jpg" alt="">julia Robinson
+                        </cite>
+
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+    </section>
+<!--TABLEAU DES PACKS
+=========================================== -->
+<section id="nospacks">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Nos packs</h2>
+        </div>
     </div>
+    <div class="row">
+        <!--PACK-1-->
+        <div class="col-md-4">
+            <div class="pack">
+                <div class="pack-title">
+                    <h3>Basique</h3>
+                    <h4>Gratuit</h4>
+                    <p>30 jours d'essai offert</p>
+                </div>
+                <div class="pack-content">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i>5 thés</li>
+                        <li><i class="fas fa-times-circle"></i>10 thés BIO</li>
+                        <li><i class="fas fa-times-circle"></i>1 kit de service</li>
+                        <li><i class="fas fa-times-circle"></i>1 bouilloire</li>
+                    </ul>
+                </div>
+                <div class="pack-signup">
+                <a href="/" class="btn btn-pack">Je m'inscris</a>
+                </div>
+            </div>
+        </div>
+        <!--PACK-2-->
+        <div class="col-md-4">
+            <div class="pack pack-premium">
+                <div class="pack-title">
+                    <h3>Premium</h3>
+                    <h4>19€<span>/mois</span></h4>
+                    <p>Pour les amoureux du thé</p>
+                    <p class="pack-title-premium">Le plus populaire</p>
+                </div>
+                <div class="pack-content">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i>5 thés</li>
+                        <li><i class="fas fa-check-circle"></i>10 thés BIO</li>
+                        <li><i class="fas fa-check-circle"></i>1 kit de service</li>
+                        <li><i class="fas fa-times-circle"></i>1 bouilloire</li>
+                    </ul>
+                </div>
+                <div class="pack-signup">
+                <a href="/" class="btn btn-pack">Je m'inscris</a>
+                </div>
+            </div>
+        </div>
+        <!--PACK-3-->
+        <div class="col-md-4">
+            <div class="pack">
+                <div class="pack-title">
+                    <h3>Elite</h3>
+                    <h4>49€<span>/mois</span></h4>
+                    <p>Pour les passionnés</p>
+                </div>
+                <div class="pack-content">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i>5 thés</li>
+                        <li><i class="fas fa-check-circle"></i>10 thés BIO</li>
+                        <li><i class="fas fa-check-circle"></i>1 kit de service</li>
+                        <li><i class="fas fa-check-circle"></i>1 bouilloire</li>
+                    </ul>
+                </div>
+                <div class="pack-signup">
+                <a href="/" class="btn btn-pack">Je m'inscris</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
+
+<!--CONTACT
+=========================================== -->
+<section id="contact">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form">
+                            <h2>Contactez-nous</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="phone">
+                            <i class="fas fa-phone"></i>
+                        <p>02.51.65.89.58</p> 
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="adress">
+                            <i class="fas fa-map-marker-alt"></i>
+                        <p> 87 Avenue François Mitterrand, 85100 Les Sables-d'Olonne</p>
+                        </div>
+                    </div>
+                </div> 
+                <!----------NOM ET EMAIL
+                < =========================================== -->
+
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-form">
+                                <label for="">Nom :</label>
+                                <input type="text" id="name">
+                            </div>
+                        </div>
+
+                        <div class="clo-md-6">
+                            <div class="contact-form">
+                                <label for="">Email :</label>
+                                <input type="email" id="email" placeholder="Ajouter votre email">
+                                <small>Vous ne recevrez pas de publicité.</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-------SERVICES ET CONTACT
+                    <=========================================== -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <label for="">sélectionnez le service</label>
+                                <select name="" id="">
+                                    <option value="">service client</option>
+                                    <option value="">service comptable</option>
+                                    <option value="">SAV</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                <!--------MESSAGE
+                <=========================================== -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <label for="">Votre message</label>
+                                <textarea name="" id="message" cols="50" rows="3" class="contact-message">
+                                </textarea>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                <!--------BOUTON ENVOYE
+                <=========================================== -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-form">
+                                <button class="btn btn-contact">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6390.9496157632475!2d-1.78021888662379!3d46.51004470136574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48045d92dfa31593%3A0x2ec5aed5c27bec75!2sMy%20Sweet%20Tea!5e0!3m2!1sfr!2sfr!4v1614433553399!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>  
+
+
+
+
+</section>
+
+<footer>
+    <div class="copyright">
+<p>Site de thé-2021. <a href="/">Mentions légales</a></p>
+    </div>
+</footer>
+                <!--------SCRIPTS------
+                <=========================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 
 
 </body>
